@@ -1,6 +1,7 @@
 import { Button, Typography } from "@mui/material";
 
 const Cards = ({ ...props }) => {
+  // eslint-disable-next-line react/prop-types
   const { heading, body, buttonText, size } = props;
   const classSuffix = `card-${size}`;
 
