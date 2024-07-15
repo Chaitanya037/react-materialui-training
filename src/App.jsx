@@ -1,4 +1,5 @@
 import "./App.css";
+import ButtonContainer from "./components/ButtonContainer";
 import Cards from "./components/Cards";
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
       <Cards {...cardData1} />
       <Cards {...cardData2} />
       <Cards {...cardData3} />
+
+      <ButtonContainer />
     </>
   );
 }
