@@ -36,7 +36,7 @@ const App = () => {
         <section className="home bd-grid" id="home">
           <div className="home__data">
             <h1 className="home__title">
-              Hi, I am <span className="home__title-color">Chaitanya</span> Web
+              Hi, I am <span className="home__title-color">Chaitanya2</span> Web
               Designer
             </h1>
             <a href="#" className="button">
