@@ -8,10 +8,9 @@ import work3 from "./assets/img/work3.jpg";
 import work4 from "./assets/img/work4.jpg";
 import work5 from "./assets/img/work5.jpg";
 import work6 from "./assets/img/work6.jpg";
-// import Header from './components/navigation/Header.jsx';
+import Header from './components/navigation/Header.jsx';
 import Footer from "./components/navigation/Footer.jsx";
 import Intro from "./components/molecules/Intro.jsx";
-import MaterialHeader from "./components/navigation/MaterialHeader.jsx";
 
 const App = () => {
   AOS.init({
@@ -23,8 +22,7 @@ const App = () => {
 
   return (
     <>
-      <MaterialHeader />
-      {/* <Header /> */}
+      <Header />
       <main className="l-main">
         <Intro />
         <section className="about section " id="about">
