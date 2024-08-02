@@ -1,7 +1,7 @@
 import "./assets/css/styles.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import about_img from "./assets/img/about.jpg";
+
 import work1 from "./assets/img/work1.jpg";
 import work2 from "./assets/img/work2.jpg";
 import work3 from "./assets/img/work3.jpg";
@@ -11,6 +11,7 @@ import work6 from "./assets/img/work6.jpg";
 import Header from './components/navigation/Header.jsx';
 import Footer from "./components/navigation/Footer.jsx";
 import Intro from "./components/molecules/Intro.jsx";
+import About from "./components/molecules/About.jsx";
 
 const App = () => {
   AOS.init({
@@ -25,25 +26,7 @@ const App = () => {
       <Header />
       <main className="l-main">
         <Intro />
-        <section className="about section " id="about">
-          <h2 className="section-title">About</h2>
-
-          <div className="about__container bd-grid">
-            <div className="about__img">
-              <img src={about_img} alt="" />
-            </div>
-
-            <div>
-              <h2 className="about__subtitle">I am Marlon</h2>
-              <p className="about__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat
-                ut voluptates soluta, aut earum nemo recusandae cumque
-                perferendis! Recusandae alias accusamus atque.
-              </p>
-            </div>
-          </div>
-        </section>
+        <About />
         <section className="skills section" id="skills">
           <h2 className="section-title">Skills</h2>
 
