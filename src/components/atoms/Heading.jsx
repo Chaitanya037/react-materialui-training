@@ -1,12 +1,10 @@
 import PropTypes from "prop-types";
 
-const Heading = ({ classes, children }) => {
-  const classUsed = classes ? ` ${classes}` : "";
-  return <h2 className={`section-title${classUsed}`}>{children}</h2>;
+const Heading = ({ children, ...props }) => {
+  return <h2 {...props}>{children}</h2>;
 };
 
 Heading.propTypes = {
-  classes: PropTypes.string,
   children: PropTypes.string,
 };
 
