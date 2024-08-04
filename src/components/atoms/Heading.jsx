@@ -1,7 +1,14 @@
 import PropTypes from "prop-types";
+import Typography from "@mui/material/Typography";
 
 const Heading = ({ children, ...props }) => {
-  return <h2 {...props}>{children}</h2>;
+  return (
+    <>
+      <Typography variant="h4" component="h2"  sx={{fontFamily: 'var(--h2-font-size)', fontWeight: 'bold'}} {...props}>
+        {children}
+      </Typography>
+    </>
+  );
 };
 
 Heading.propTypes = {
