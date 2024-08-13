@@ -17,19 +17,34 @@ const Skills = () => {
         variant="h4"
         component="h2"
         className="section-title"
-        sx={{ fontFamily: "var(--h2-font-size)", fontWeight: "bold" }}
+        sx={{
+          fontSize: "var(--h2-font-size) !important",
+          fontWeight: "bold !important",
+          margin: "0 0 var(--mb-6) 0",
+        }}
       >
         Skills
       </Typography>
 
       <div className="skills__container bd-grid">
         <div>
-          <Heading className="skills__subtitle">Profesional Skills</Heading>
+          <Heading
+            className="skills__subtitle"
+            sx={{
+              mb: 2,
+              textAlign: "start",
+              fontSize: "1.5rem",
+              fontWeight: "bold",
+              fontFamily: "var(--body-font)"
+            }}
+          >
+            Profesional Skills
+          </Heading>
           <Typography
             className="skills__text"
             sx={{
               mb: 4,
-              textAlign: "center",
+              textAlign: "initial",
               fontSize: "var(--normal-font-size)",
               fontFamily: "var(--body-font)",
             }}
