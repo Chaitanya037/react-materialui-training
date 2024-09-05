@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <AppBar component="nav" position="static" sx={{ backgroundColor: "#fff" }}>
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -117,6 +117,7 @@ const Header = () => {
                   fontSize: "var(--normal-font-size)",
                   color: "var(--second-color)",
                   textTransform: "none",
+                  padding: "0 1.5rem"
                 }}
               >
                 {page}
