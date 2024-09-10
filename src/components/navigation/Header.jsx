@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar component="nav" position="static" sx={{ backgroundColor: "#fff" }}>
+    <AppBar component="nav" position="sticky" sx={{ backgroundColor: "#fff" }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Typography
