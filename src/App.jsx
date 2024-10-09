@@ -13,6 +13,7 @@ import Footer from "./components/navigation/Footer.jsx";
 import Intro from "./components/molecules/Intro.jsx";
 import About from "./components/molecules/About.jsx";
 import Skills from "./components/molecules/Skills.jsx";
+import ScoreCard from "./components/molecules/ScoreCard.jsx";
 
 const App = () => {
   AOS.init({
@@ -29,6 +30,7 @@ const App = () => {
         <Intro />
         <About />
         <Skills />
+        <ScoreCard />
         <section className="work section" id="work">
           <h2 className="section-title">Work</h2>
 
