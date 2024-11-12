@@ -1,6 +1,8 @@
-# React + Vite
+# Sample Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a sample portfolio, created in HTML, CSS and Javascript
+
+This template is converted in ReactJS + MaterialUI
 
 Currently, two official plugins are available:
 
