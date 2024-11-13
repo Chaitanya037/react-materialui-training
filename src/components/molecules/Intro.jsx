@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unknown-property */
-import {Box} from '@mui/material';
+import { Box } from "@mui/material";
 import perfil from "../../assets/img/perfil.png";
 import "./Intro.css";
 
