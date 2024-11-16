@@ -252,16 +252,6 @@ img {
   .home {
     padding: 4rem 0 2rem;
   }
-  .home__social {
-    padding-top: 0;
-    padding-bottom: 2.5rem;
-    flex-direction: row;
-    align-self: flex-end;
-  }
-  .home__social-icon {
-    margin-bottom: 0;
-    margin-right: var(--mb-4);
-  }
   .home__img {
     width: 300px;
     bottom: 25%;

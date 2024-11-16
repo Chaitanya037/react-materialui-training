@@ -1,7 +1,11 @@
 /* eslint-disable react/no-unknown-property */
-import { Box, Paper, Stack } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
+
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 import perfil from "../../assets/img/perfil.png";
 import "./Intro.css";
@@ -19,7 +23,6 @@ const Intro = () => {
       >
         <Box className="home__data">
           <Typography
-            className="home__title"
             component="h1"
             sx={{
               fontSize: "var(--big-font-size)",
@@ -29,7 +32,18 @@ const Intro = () => {
             }}
           >
             Hi,
-            <br /> I am <span className="home__title-color">Chaitanya</span>
+            <br /> I am{" "}
+            <Typography
+              component="span"
+              sx={{
+                fontSize: "var(--big-font-size)",
+                fontWeight: "bold",
+                fontFamily: '"Poppins", sans-serif',
+                color: "var(--first-color)",
+              }}
+            >
+              Chaitanya
+            </Typography>
             <br /> Web Designer
           </Typography>
           <Link
@@ -41,17 +55,47 @@ const Intro = () => {
             Contact
           </Link>
         </Box>
-        <Stack direction={"row"} className="home__social">
-          <a href="" className="home__social-icon">
-            <i className="bx bxl-linkedin"></i>
-          </a>
-          <a href="" className="home__social-icon">
-            <i className="bx bxl-behance"></i>
-          </a>
-          <a href="" className="home__social-icon">
-            <i className="bx bxl-github"></i>
-          </a>
-        </Stack>
+        <Box>
+          <Link
+            href=""
+            underline="none"
+            sx={{
+              mb: 2,
+              mr: 4,
+              fontSize: "1.5rem",
+              "&:hover": { color: "var(--first-color)" },
+            }}
+            color="var(--second-color)"
+          >
+            <LinkedInIcon fontSize="large" />
+          </Link>
+          <Link
+            href=""
+            underline="none"
+            sx={{
+              mb: 2,
+              mr: 4,
+              fontSize: "1.5rem",
+              "&:hover": { color: "var(--first-color)" },
+            }}
+            color="var(--second-color)"
+          >
+            <InstagramIcon fontSize="large" />
+          </Link>
+          <Link
+            href=""
+            underline="none"
+            sx={{
+              mb: 2,
+              mr: 4,
+              fontSize: "1.5rem",
+              "&:hover": { color: "var(--first-color)" },
+            }}
+            color="var(--second-color)"
+          >
+            <GitHubIcon fontSize="large" />
+          </Link>
+        </Box>
         <Box
           className="home__img"
           sx={{
