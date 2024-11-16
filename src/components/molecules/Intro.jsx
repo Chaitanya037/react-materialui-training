@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unknown-property */
-import { Box, Button, Paper, Stack } from "@mui/material";
+import { Box, Paper, Stack } from "@mui/material";
+import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
+
 import perfil from "../../assets/img/perfil.png";
 import "./Intro.css";
 
@@ -13,7 +15,7 @@ const Intro = () => {
         data-aos="fade-down"
         className="home bd-grid"
         id="home"
-        sx={{mt: 4}}
+        sx={{ mt: 4 }}
       >
         <Box className="home__data">
           <Typography
@@ -30,19 +32,14 @@ const Intro = () => {
             <br /> I am <span className="home__title-color">Chaitanya</span>
             <br /> Web Designer
           </Typography>
-          <Button
-            variant="container"
-            sx={{
-              backgroundColor: "var(--first-color)",
-              color: "#fff",
-              padding: "0.75rem 2.5rem",
-              fontWeight: "var(--font-semi)",
-              borderRadius: "0.5rem",
-              transition: "0.3s",
-            }}
+          <Link
+            className="button"
+            underline="none"
+            color="success"
+            sx={{ fontWeight: "var(--font-semi)" }}
           >
             Contact
-          </Button>
+          </Link>
         </Box>
         <Stack direction={"row"} className="home__social">
           <a href="" className="home__social-icon">

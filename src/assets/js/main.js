@@ -43,6 +43,7 @@ const scrollActive = () =>{
 window.addEventListener('scroll', scrollActive)
 
 /*===== SCROLL REVEAL ANIMATION =====*/
+// eslint-disable-next-line no-undef
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
